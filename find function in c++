@@ -1,0 +1,61 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+typedef unsigned long long ll;
+int main()
+{
+   string s;
+   cin>>s;
+   string s1="Nikita" , s2="Ann" , s3="Slava" , s4="Olya" , s5="Danil";
+   int count=0;
+   ll l =s.length();
+   if(s.find(s1)<l){
+       s[s.find(s1)]='x';
+       count++;
+   }
+   if(s.find(s2)<l){
+       s[s.find(s2)]='x';
+       count++;
+   }
+   if(s.find(s3)<l){
+       s[s.find(s3)]='x';
+       count++;
+   }
+   if(s.find(s4)<l){
+       s[s.find(s4)]='x';
+       count++;
+   }
+   if(s.find(s5)<l){
+       s[s.find(s5)]='x';
+       count++;
+   }
+   if(s.find(s1)<l){
+       s[s.find(s1)]='x';
+       count++;
+   }
+   if(s.find(s2)<l){
+       s[s.find(s2)]='x';
+       count++;
+   }
+   if(s.find(s3)<l){
+       s[s.find(s3)]='x';
+       count++;
+   }
+   if(s.find(s4)<l){
+       s[s.find(s4)]='x';
+       count++;
+   }
+   if(s.find(s5)<l){
+       s[s.find(s5)]='x';
+       count++;
+   }
+   if(count==1){
+       cout<<"YES";
+   }
+   else{
+       cout<<"NO";
+   }
+
+    
+    return 0;
+}
