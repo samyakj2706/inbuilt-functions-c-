@@ -1,0 +1,31 @@
+
+#include <bits/stdc++.h>
+typedef unsigned long long ll;
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int samy[n];
+    ll k=0;
+    for(int i=0 ; i<n ;i++){
+        int sum=0;
+        int a , b , c , d;
+        cin>>a>>b>>c>>d;
+        sum+=a+b+c+d;
+        samy[i]=sum;
+}
+    int samyak=samy[0];
+    sort(samy,samy+n,greater<int>());
+    
+    for(int i=0 ; i<n ;i++){
+        if(samyak==samy[i]){
+            cout<<i+1;
+            break;
+        }
+        
+    }
+
+    return 0;
+}
